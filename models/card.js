@@ -22,7 +22,7 @@ const Card = new Schema({
     "playerClass": { type: String },
     "howToGet": { type: String },
     "howToGetGold": { type: String },
-    "img": { type: String },
+    "img": { type: String, default: 'http://wow.zamimg.com/images/hearthstone/cards/enus/original/hexfrog.png' },
     "imgGold": { type: String },
     "locale": { type: String },
     "mechanics": { type: Array },

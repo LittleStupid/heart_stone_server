@@ -18,9 +18,9 @@ module.exports = {
     },
 
     'GET /api/all': async (ctx, next) => {
-        console.log('&&&');
-        console.log(ctx.query);
-        console.log('&&&');
+        // console.log('&&&');
+        // console.log(ctx.query);
+        // console.log('&&&');
         ctx.response.type = 'application/json';
         ctx.response.body = await cardCtrl.all(ctx.query);
     },

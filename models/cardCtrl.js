@@ -2,7 +2,7 @@ const CardModel = require('./card');
 
 //列出所有用户数据，支持分页
 exports.all = function(queryOption){
-  console.log( queryOption );
+  // console.log( queryOption );
   const ITEM_PER_PAGE = 6;
 
   let { cost, page, playerClass } = queryOption;

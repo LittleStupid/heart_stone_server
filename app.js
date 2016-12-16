@@ -13,7 +13,8 @@ app.use(bodyParser());
 // add controller:
 app.use(controller());
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
+
 console.log('app started at port 3000...');
 
 // const connString = 'mongodb://localhost:27017/basic_card_db';
